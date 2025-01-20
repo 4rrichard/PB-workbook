@@ -2,115 +2,100 @@
 
 ## Data Basics
 
-- What are the differences between objects, arrays, and primitives in JavaScript? How are they used in programming?
+- **What are the differences between objects, arrays, and primitives in JavaScript? How are they used in programming?**
+
   - How would you access the value of a specific key in an object?
 
-### Objects: stores key value pairs, keys are unique
+  - **Objects**: Stores key-value pairs, keys are unique.
+  - **Arrays**: Stores values, each value has an index.
+  - **Primitives**: Represents single values.
+  - **Accessing the value of a specific key**: Use dot notation (e.g., `cat.name`) or bracket notation (e.g., `cat["name"]`).
 
-### Arrays: stores values, each value has an index
+- **Explain the concept of key-value pairs in objects and how they differ from indexed elements in arrays.**
 
-### Primitives: different single values
+  - You can find a specific value with unique keys in objects, whereas arrays store elements in an ordered manner and are accessed through their indices (e.g., used for lists).
 
-### Accessing the value of a specific key: with the dot notation e.g. `cat.name` or `cat["name"]`
+- **Describe a scenario where you would choose to use an object instead of an array, or vice versa, and explain your reasoning.**
 
-- Explain the concept of key-value pairs in objects and how they differ from indexed elements in arrays.
+  - **Arrays**: Useful for storing similar values like strings or numbers, especially when the order of elements is important.
+  - **Objects**: Ideal for representing real-world concepts like storing data about a person or a product.
 
-### You can find a specific value with the unique keys in objects, in arrays each element is ordered so they can be found through their indexes (e.g., used for lists).
+- **How can you retrieve the first and last items of an array?**
 
-- Describe a scenario where you would choose to use an object instead of an array, or vice versa, and explain your reasoning.
+  - **First item**: `array[0]`
+  - **Last item**: `array[array.length - 1]`
 
-### Arrays: when I store similar values like strings, numbers where the order of the elements can be important.
-
-### Objects: used to represent real world concept: like storing a data of a person or a product.
-
-- How can you retrieve the first and last items of an array?
-
-### First: `array[0]`, last: `array[array.length - 1]`.
-
-- Identify the five most commonly used primitive types in JavaScript, and provide examples demonstrating when and how to use them?
-
-### Five primitives: string, number, boolean, null, undefined
-
-### String: e.g., providing text-based value
-
-### Number: calculations
-
-### Boolean: e.g., comparing 2 numbers if their value is the same
-
-### Null: when a value is intentionally set to have no value
-
-### Undefined: e.g., when a function has no return value
+- **Identify the five most commonly used primitive types in JavaScript, and provide examples demonstrating when and how to use them.**
+  - **Five primitives**: string, number, boolean, null, undefined
+    - **String**: Used for text-based values (e.g., `"Hello"`).
+    - **Number**: Used for calculations (e.g., `42`).
+    - **Boolean**: For comparisons (e.g., `true`, `false`).
+    - **Null**: Represents an intentionally empty value (e.g., `let x = null`).
+    - **Undefined**: Indicates uninitialized variables (e.g., `let x;`).
 
 ---
 
 ## Algorithm Basics
 
-- Provide examples of assignment operators in JavaScript.
+- **Provide examples of assignment operators in JavaScript.**
 
-### `=`, `+=`, `-=`, `*=`, `/=`
+  - `=`, `+=`, `-=`, `*=`, `/=`
 
-- Name some of the arithmetic operators in JavaScript.
+- **Name some of the arithmetic operators in JavaScript.**
 
-### `+`, `-`, `*`, `/`, `%`, `**`
+  - `+`, `-`, `*`, `/`, `%`, `**`
 
-- What are the different comparison operators in JavaScript?
+- **What are the different comparison operators in JavaScript?**
 
-### `===`, `==`, `!==`, `!=`, `<`, `>`, `>=`, `<=`
+  - `===`, `==`, `!==`, `!=`, `<`, `>`, `>=`, `<=`
 
-- Name a few logical operators used in JavaScript.
+- **Name a few logical operators used in JavaScript.**
 
-### `&&`, `||`, `!`
+  - `&&`, `||`, `!`
 
-- Explain the differences between a `for` loop, `for...of` loop, and `for...in` loop in JavaScript.
+- **Explain the differences between a `for` loop, `for...of` loop, and `for...in` loop in JavaScript.**
 
-### `For` loop: Mainly used when the index of an element is important.
+  - **For loop**: Mainly used when the index of elements is important.
+  - **For...of loop**: Used to iterate over array values when the order is not important.
+  - **For...in loop**: Iterates over the keys in an object.
 
-### `For...of` loop: Where the order is not important, just the values of the array.
-
-### `For...in` loop: Mainly used on objects, to identify the key-value pairs (iterating over the keys).
-
-- If you can't use any built-in functions or methods, how would you calculate the average of values in an array?
-
-### Create a `let` variable outside of the `for` loop with value of `0`, then add each number to it from the `for` loop with the `+=` assignment operator, then divide that final value by the length of the array.
+- **If you can't use any built-in functions or methods, how would you calculate the average of values in an array?**
+  - Create a `let` variable initialized to `0` outside the loop.
+  - Use a `for` loop to add each number to it with `+=`.
+  - Divide the sum by the array's length.
 
 ---
 
 ## Function Basics
 
-- What is a function in JavaScript? Explain its purpose and how it is used in programming.
+- **What is a function in JavaScript? Explain its purpose and how it is used in programming.**
 
-### A function in JavaScript is a reusable block of code designed to perform a specific task. Functions take inputs (parameters), process them, and can return an output (result). They help make code modular, reusable, and easier to manage.
+  - A function in JavaScript is a reusable block of code designed to perform specific tasks. Functions take inputs (parameters), process them, and return outputs. They make code modular and reusable.
 
-- Describe the different syntax elements that make up a JavaScript function.
+- **Describe the different syntax elements that make up a JavaScript function.**
 
-### Function keyword: Marks the beginning of a function declaration.
+  - **Function keyword**: Marks the start of a function declaration.
+  - **Function name**: Identifies the function (e.g., `myFunction`).
+  - **Parameters (optional)**: Input variables (e.g., `(param1, param2)`).
+  - **Function body**: The code block defining the function's behavior.
+  - **Return (optional)**: Sends a result back to the caller.
 
-### Function name: The name of the function (e.g., `myFunction`).
+- **How do you pass arguments to a function? Explain the concept of parameter passing and provide an example.**
 
-### Parameters (optional): Variables passed into the function (e.g., `(param1, param2)`).
+  - Call the function with arguments (e.g., `cats("Kitty")`).
+  - Inside the function, use a parameter to reference the argument (e.g., `function(catName)`).
 
-### Function body: The block of code that defines the function's behavior.
+- **What is the difference between function expressions and function declarations? Provide examples of each.**
 
-### Return (optional): Sends a result back from the function to where it was called.
+  - **Function Declaration**: `function cat() {}`
+  - **Function Expression**: `const cat = function() {}` (can be named or anonymous).
 
-- How do you pass arguments to a function? Explain the concept of parameter passing and provide an example.
+- **Explain what a callback function is in JavaScript.**
 
-### We need to call the function outside of the function: `cats()`, then add the argument that we want to pass into the function: `cats("Kitty")`. After that, in the function parameter, name the incoming value with something descriptive (e.g., `function(catName)`), so we can use the incoming value inside the function referring to the parameter name from now on.
+  - A callback is a function passed as an argument to another function. It is used to handle tasks like asynchronous operations (e.g., data fetching).
 
-- What is the difference between function expressions and function declarations? Provide examples of each.
-
-### Function declaration: A named function using the function keyword, e.g., `function cat(){}`.
-
-### Function expression: A function assigned to a variable. Here the function can be anonymous or named.
-
-- Explain what a callback function is in JavaScript.
-
-### When we call a function inside of another function passed as an argument. Used to handle tasks that take more time (e.g., loading data), make functions reusable.
-
-- What is the scope of variables in JavaScript functions? Explain the difference between local and global variables.
-
-### Global variables: Can be accessed from local scopes like from inside of a function or a `for` loop.
-
-### Local variables: Only accessible within the function or loop inside of them, and other functions cannot reach them unless the value is passed to them as an argument.
+- **What is the scope of variables in JavaScript functions? Explain the difference between local and global variables.**
+  - **Global variables**: Accessible anywhere in the program.
+  - **Local variables**: Only accessible within the function or block where they are defined.
 
 ---
