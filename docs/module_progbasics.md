@@ -2,9 +2,7 @@
 
 ## Data Basics
 
-- **What are the differences between objects, arrays, and primitives in JavaScript? How are they used in programming?**
-
-  - How would you access the value of a specific key in an object?
+- **What are the differences between objects, arrays, and primitives in JavaScript? How are they used in programming? How would you access the value of a specific key in an object?**
 
   - **Objects**: Stores key-value pairs, keys are unique.
   - **Arrays**: Stores values, each value has an index.
